@@ -44,6 +44,37 @@ git push
 You can select the files to `push` by changing `git add .` into `git add FILENAME`.
 * Refresh the repo page, you may see your updates.
 
+### Push an existing repository to the organization
+If you already have a repository and want to push to the organization, you need to add additional push URLs to your git config file.
+* Go to your repository folder, type `ls -al`, and you will see *.git* inside this folder.
+* Do `vim .git/config`, then you will see
+```
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+        ignorecase = true
+        precomposeunicode = true
+[remote "origin"]
+        url = https://github.com/WhitneyLab/Tutorials.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+```
+* Add your addition push URLs under `[remote "origin"]` like
+(For editting, enter `i` to enter the insert mode, go to the line using arrows and start editting. When you finish, press `esc` to exit the insert mode and type `:wq` to save and exit. For mac touchbar users, you may want to remap keyboard to have the `esc` key.)
+```
+[remote "origin"]
+        url = https://github.com/AlbusPeter/Non-Linear-Curve-Fitting.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+        pushurl = https://github.com/AlbusPeter/Non-Linear-Curve-Fitting.git
+        pushurl = https://github.com/WhitneyLab/Non-Linear-Curve-Fitting.git
+```
+Then every time you commit and push changes, Github will automatically update the repos which you listed using `pushurl`.
+(For editting using **Vim**, check [here](https://www.tutorialspoint.com/vim/vim_quick_guide.htm))
+
 ### Code Review
 While someone submit a **pull request**, it will automatically create a discussion forum where you can comment and reply to the changes. When everything is done, you can merge the changes into your **master branch** by clicking `Merge pull request`.
 
