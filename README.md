@@ -7,4 +7,4 @@ Hi! Welcome to the Whitney Lab! This is a simple introduction for both mentors a
 
 ### Create new team
 * Click the green `New team` button inside the **Teams** tab
-![New team button](/images/New_team_button.jpg "New team Button")
+![New team button](./assets/imgs/New_team_button.png "New team Button")
