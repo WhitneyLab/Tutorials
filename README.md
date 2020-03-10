@@ -30,6 +30,8 @@ Hi! Welcome to the Whitney Lab! This is a simple introduction for both mentors a
 ![New Repo Setting](./assets/imgs/New_repo_setting.png "New Repo Setting")
 * Your repository should be built right now. Then you can check the link which allows you to clone this repository on your local computer. Click the green `Clone or download` button, you can copy the link.
 ![Git Clone](./assets/imgs/Clone.png "Git Clone")
+
+#### Push a new repository from scratch
 * Open a terminal, go to your target folder, and run the command
 ```
 git clone Your_repo_link
@@ -44,7 +46,7 @@ git push
 You can select the files to `push` by changing `git add .` into `git add FILENAME`.
 * Refresh the repo page, you may see your updates.
 
-### Push an existing repository to the organization
+#### Push an existing repository to the organization
 If you already have a repository and want to push to the organization, you need to add additional push URLs to your git config file.
 * Go to your repository folder, type `ls -al`, and you will see *.git* inside this folder.
 * Do `vim .git/config`, then you will see
@@ -57,7 +59,7 @@ If you already have a repository and want to push to the organization, you need 
         ignorecase = true
         precomposeunicode = true
 [remote "origin"]
-        url = https://github.com/WhitneyLab/Tutorials.git
+        url = Your_original_git_repo_link
         fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
         remote = origin
@@ -67,10 +69,10 @@ If you already have a repository and want to push to the organization, you need 
 (For editting, enter `i` to enter the insert mode, go to the line using arrows and start editting. When you finish, press `esc` to exit the insert mode and type `:wq` to save and exit. For mac touchbar users, you may want to remap keyboard to have the `esc` key.)
 ```
 [remote "origin"]
-        url = https://github.com/AlbusPeter/Non-Linear-Curve-Fitting.git
+        url = Your_original_git_repo_link
         fetch = +refs/heads/*:refs/remotes/origin/*
-        pushurl = https://github.com/AlbusPeter/Non-Linear-Curve-Fitting.git
-        pushurl = https://github.com/WhitneyLab/Non-Linear-Curve-Fitting.git
+        pushurl = Your_original_git_repo_link
+        pushurl = Your_new_git_repo_link
 ```
 Then every time you commit and push changes, Github will automatically update the repos which you listed using `pushurl`.
 (For editting using **Vim**, check [here](https://www.tutorialspoint.com/vim/vim_quick_guide.htm))
