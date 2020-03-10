@@ -9,7 +9,7 @@ Hi! Welcome to the Whitney Lab! This is a simple introduction for both mentors a
 * Click the green `New team` button inside the **Teams** tab
 ![New team button](./assets/imgs/New_team_button.png "New team Button")
 * Set up your **team name** and a **brief description** about your team. The new team can be a child team of your previous team and you can select its parent team from the menu. At last, you can decide whether to put the team **Visible** or **Secret**(Private) from the whole organization.
-![New team Setups](./assets/imgs/Creat_new_team.png "Setups"){width=50%}
+<img src="./assets/imgs/Creat_new_team.png" alt="Setups" width="400"/>
 * After the setups, you may find your team under the Team list.
 ![Team lists](./assets/imgs/Teams.png "Team list")
 
@@ -27,7 +27,7 @@ Hi! Welcome to the Whitney Lab! This is a simple introduction for both mentors a
 * Go back to the origanization dashboard. You can find the green `New` button.
 ![Organization Dashboard](./assets/imgs/New_repo.png "Organization Dashboard")
 * Click on it, you will see the new repository setting page. Similarly, you can set your **repository name** and write a **brief intro** to your repo. You can also decide whether to share this repo with other lab members inside this organization by choosing **Public** or **Private**. At last, I recommend you that *Initialize this repository with a README*, where you can write instructions about your repository. (*README file* is based on Markdown syntax, you can find the basic syntax [here](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). For writing the fomulas, most *Latex* syntax works and you can check [here](https://en.wikibooks.org/wiki/LaTeX/Mathematics).)
-![New Repo Setting](./assets/imgs/New_repo_setting.png "New Repo Setting"){width=50%}
+<img src="./assets/imgs/New_repo_setting.png" alt="New Repo Setting" width="400"/>
 * Your repository should be built right now. Then you can check the link which allows you to clone this repository on your local computer. Click the green `Clone or download` button, you can copy the link.
 ![Git Clone](./assets/imgs/Clone.png "Git Clone")
 
