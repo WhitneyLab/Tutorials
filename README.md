@@ -23,13 +23,58 @@ Hi! Welcome to the Whitney Lab! This is a simple introduction for both mentors a
         - **Repositories** : You can add repositories from the organization repositories. Remember to change the **Permission Level** for every repository you added so that the team members counld have certain permisison on the repos.
         - **Settings** : This is the place where you can modify the **team profiles** (Name, description, team visibility, profile picture, etc.). It is the only place where you can **delete** the team.
 
+### Create new repository
+* Go back to the origanization dashboard. You can find the green `New` button.
+![Organization Dashboard](./assets/imgs/New_repo.png "Organization Dashboard")
+* Click on it, you will see the new repository setting page. Similarly, you can set your **repository name** and write a **brief intro** to your repo. You can also decide whether to share this repo with other lab members inside this organization by choosing **Public** or **Private**. At last, I recommend you that *Initialize this repository with a README*, where you can write instructions about your repository. (*README file* is based on Markdown syntax, you can find the basic syntax [here](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). For writing the fomulas, most *Latex* syntax works and you can check [here](https://en.wikibooks.org/wiki/LaTeX/Mathematics).)
+![New Repo Setting](./assets/imgs/New_repo_setting.png "New Repo Setting")
+* Your repository should be built right now. Then you can check the link which allows you to clone this repository on your local computer. Click the green `Clone or download` button, you can copy the link.
+![Git Clone](./assets/imgs/Clone.png "Git Clone")
+* Open a terminal, go to your target folder, and run the command
+```
+git clone Your_repo_link
+```
+Then you can see the repo folder cloned to your folder. And you can add your source code in this folder.
+* When everything is ready, run the following commands.
+```
+git add .
+git commit -m "Your commit comment"
+git push
+```
+You can select the files to `push` by changing `git add .` into `git add FILENAME`.
+* Refresh the repo page, you may see your updates.
+
 ### Code Review
+While someone submit a **pull request**, it will automatically create a discussion forum where you can comment and reply to the changes. When everything is done, you can merge the changes into your **master branch** by clicking `Merge pull request`.
+
+When a **merge conflict** happen, you can resolve it by checking the conflict codes and deciding which change to make. For details, check [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github)
 
 ## For RAs
+Based on the permission to certain repositories, you can read/write/manage the repositories. When you have the latter two permissions, you can make changes to the source code.
+
+To make changes,
+* Clone the repository.
+```
+git clone Your_repo_link
+```
+You can find the link while entering the repository page and clicking the green `Clone or download` button.
+* Make changes to the source code.
+* The second time you make the changes, make sure run the command `git pull` to fetch the latest updates on the master brach.
 
 ### Commit codes
+When you have your changes ready, remember to **create a new branch** and **submit a pull request**, rather than push the changes to the master branch directly which is **dangerous**. You can run the following commands to do so.
+```
+git checkout -b Your_new_branch_name
+git add .
+git commit -m "Your commit comment"
+git push origin Your_new_branch_name
+```
+Then the repository owner can see a pull request and review your changes.
+
+* When you collaberate with others, remember that do not make the changes at the same time. It will bring in merge conflicts while submitting the pull request. Every time, make sure that your changes are based on the latest commit.
 
 ## Basics
 * **Discussions** : Team members can discuss issues here. You can start a new discussion or reply to others discussion.
 
 ### Git operations
+Check the git [cheat sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf).
