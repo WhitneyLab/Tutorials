@@ -31,7 +31,7 @@ Hi! Welcome to the Whitney Lab! This is a simple introduction for both mentors a
 * Your repository should be built right now. Then you can check the link which allows you to clone this repository on your local computer. Click the green `Clone or download` button, you can copy the link.
 ![Git Clone](./assets/imgs/Clone.png "Git Clone")
 
-#### Push a new repository from scratch
+#### - Push a new repository from scratch
 * Open a terminal, go to your target folder, and run the command
 ```
 git clone Your_repo_link
@@ -46,7 +46,7 @@ git push
 You can select the files to `push` by changing `git add .` into `git add FILENAME`.
 * Refresh the repo page, you may see your updates.
 
-#### Push an existing repository to the organization
+#### - Push an existing repository to the organization
 If you already have a repository and want to push to the organization, you need to add additional push URLs to your git config file.
 * Go to your repository folder, type `ls -al`, and you will see *.git* inside this folder.
 * Do `vim .git/config`, then you will see
