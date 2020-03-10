@@ -112,5 +112,5 @@ Then the repository owner can see a pull request and review your changes.
 ### Git operations
 Check the git [cheat sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf).
 
-======
+----------------------
 If you have any questions, please let me (peter.zhren@berkeley.edu) know so that I can update the tutorials!
